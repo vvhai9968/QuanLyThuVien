@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="#4F91D7"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm Phiếu Mượn"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginBottom="6dp"
+            />
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/black"/>
+
+        <LinearLayout
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên người mượn *"
+                android:textSize="19dp"
+                android:textColor="@color/black"/>
+
+            <Spinner
+                android:id="@+id/spinner_idTenNguoiPM"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/taovien_input" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên sách *"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+            <Spinner
+                android:id="@+id/spinner_idTenSachPM"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/taovien_input" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:text="Ngày thuê *"
+                android:textSize="20dp"
+                android:textColor="@color/black" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                >
+                <EditText
+                    android:background="@drawable/taovien_input"
+                    android:id="@+id/pmNgayThue"
+                    android:layout_width="320dp"
+                    android:layout_height="48dp"
+                    android:hint="dd/MM/yyyy"
+                    android:layout_gravity="center"
+                    android:paddingLeft="15dp"
+                    />
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/date"
+                    android:id="@+id/date"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="Ngày trả *"
+            android:textSize="20dp"
+            android:textColor="@color/black" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            >
+            <EditText
+                android:background="@drawable/taovien_input"
+                android:id="@+id/pmNgayTra"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:hint="dd/MM/yyyy"
+                android:layout_gravity="center"
+                android:paddingLeft="15dp"
+                />
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/date"
+                android:id="@+id/datetra"/>
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giá thuê*"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+            <EditText
+                android:id="@+id/giaThue"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/taovien_input"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="end"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/themPm"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="17dp"
+                android:background="@drawable/button_bg"
+                app:cardCornerRadius="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/button_bg"
+                    android:gravity="center"
+                    android:text="Thêm"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/thoatPM"
+                android:layout_marginLeft="14dp"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="17dp"
+                android:background="@drawable/button_bg"
+                app:cardCornerRadius="5dp">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/button_bg"
+                    android:gravity="center"
+                    android:text="Thoát"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>

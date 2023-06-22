@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="14dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="59dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginLeft="7dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/loaisach"/>
+
+            <TextView
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/item_row_ten"
+                android:layout_gravity="center_vertical"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:hint="Loai sach" />
+
+
+
+         <ImageView
+                android:layout_marginLeft="17dp"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/item_rowDelete"
+                android:src="@drawable/ic_delete"
+                />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="14dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/anhDaiDien"
+            android:layout_marginLeft="4dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/addimg"/>
+
+       <LinearLayout
+           android:layout_gravity="center"
+           android:layout_width="210dp"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <TextView
+                   android:textSize="20dp"
+                   android:textColor="@color/black"
+                   android:textStyle="bold"
+                   android:layout_gravity="center_vertical"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:paddingLeft="10dp"
+                   android:hint="Họ Tên: " />
+               <TextView
+                   android:textSize="20dp"
+                   android:textColor="@color/black"
+                   android:textStyle="bold"
+                   android:id="@+id/item_hoTen"
+                   android:layout_gravity="center_vertical"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:paddingLeft="10dp"
+                   android:hint="Vu Van Hai" />
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <TextView
+                   android:textSize="20dp"
+                   android:textColor="@color/black"
+                   android:textStyle="bold"
+                   android:layout_gravity="center_vertical"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:paddingLeft="10dp"
+                   android:hint="Năm Sinh: " />
+               <TextView
+               android:textSize="20dp"
+               android:textColor="@color/black"
+               android:textStyle="bold"
+               android:id="@+id/item_namSinh"
+               android:layout_gravity="center_vertical"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:paddingLeft="10dp"
+               android:hint="2003" />
+           </LinearLayout>
+       </LinearLayout>
+
+
+
+      <LinearLayout
+          android:layout_gravity="center"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+          <ImageView
+              android:layout_marginTop="7dp"
+              android:layout_width="match_parent"
+              android:layout_height="33dp"
+              android:layout_gravity="center_vertical"
+              android:id="@+id/item_Sua"
+              android:src="@drawable/ic_edit"
+              />
+
+          <ImageView
+              android:id="@+id/item_Xoa"
+              android:layout_width="match_parent"
+              android:layout_height="33dp"
+              android:layout_gravity="center_vertical"
+              android:layout_marginTop="7dp"
+              android:layout_marginBottom="7dp"
+              android:src="@drawable/ic_delete" />
+      </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

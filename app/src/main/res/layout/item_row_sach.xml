@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="14dp"
+    android:id="@+id/suaXoa"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/anhSach"
+            android:layout_width="123dp"
+            android:layout_height="123dp"
+            android:src="@drawable/sachdm"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tenSach"
+                android:textColor="@color/black"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Sách ngữ văn lớp 6 tập 2"
+                android:textSize="21dp"
+                />
+           <LinearLayout
+               android:layout_marginTop="14dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <TextView
+
+                   android:textColor="@color/black"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Loại:"
+                   android:textSize="21dp"
+                   />
+               <TextView
+                   android:layout_marginLeft="7dp"
+                   android:id="@+id/loaiSach"
+                   android:textColor="@color/black"
+                   android:layout_width="163dp"
+                   android:layout_height="wrap_content"
+                   android:text="Giao duc"
+                   android:textSize="21dp"
+                   />
+           </LinearLayout>
+           <LinearLayout
+               android:layout_marginTop="14dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <TextView
+
+                   android:textColor="@color/black"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Có thể mượn: "
+                   android:textSize="21dp"
+                   />
+               <TextView
+                   android:id="@+id/soLuong"
+                   android:textColor="@color/black"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="  10"
+                   android:textSize="21dp"
+                   />
+           </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
